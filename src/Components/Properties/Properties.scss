@@ -1,0 +1,103 @@
+
+
+.outer-properties {
+    display: flex;
+    align-items: center;
+    .img-section{
+        position: relative;
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .content-section {
+        padding-right: 4em;
+        width: 50%;
+  
+ 
+        h2 span{
+            color: var(--main-color);
+        }
+        p{
+            color: var(--para-color);
+            line-height: 28px;
+        }
+    
+        .list-properties{
+            ul{
+                padding-left: 40px;
+                li{
+                    position: relative;
+                    margin-top: 1.5em;
+                    display: block;
+                    color: var(--para-color);
+                }
+                li::before {
+                    position: absolute;
+                    content: "";
+                    left: -30px;
+                    width: 15px;
+                    height: 1px;
+                    background-color: var(--main-color);
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    -ms-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                }
+            }
+        }
+        .icon-listing{
+            margin-top: 2em;
+            ul{
+               li{
+                    position: relative;
+                    list-style: none;
+                    display: inline-block;
+                    margin-right: 30px;
+                    max-width: 160px;
+                    font-size: 14px;
+                    p{
+                        margin: 0;
+                        span{
+                            svg {
+                                font-size: 18px;
+                                position: relative;
+                                top: 3px;
+                                left: 2px;
+                            }
+                        }
+                    }
+                    :before {
+                        position: absolute;
+                        content: "";
+                        right: -15px;
+                        top: 50%;
+                        -webkit-transform: translateY(-50%);
+                        -ms-transform: translateY(-50%);
+                        transform: translateY(-50%);
+                        width: 1px;
+                        height: 100%;
+                        background-color: var(--para-color);
+                        opacity: 0.2;
+                    }
+                 
+                }
+               
+            }
+        }
+        .list-img{
+            margin-top: 2em;
+           ul{
+               li{
+                margin-right: 10px;
+                width: 160px;
+                display: inline-block;
+                img{
+                    width: 100%;
+                }
+               }
+           }
+        }
+       }
+    
+    }

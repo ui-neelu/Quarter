@@ -1,0 +1,191 @@
+:focus-visible {
+    outline: none;
+}
+h1 {
+    font-size: 65px;
+    line-height: 1;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: var(--heading-color);
+}
+h2{
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+}
+.mt-90{
+    margin-top: 90px;
+}
+.header-section{
+    text-align: center;
+    margin-bottom: 50px;
+  }
+.subtitle{
+    margin-bottom: 15px;
+    span {
+        background: #fdefec;
+        padding: 5px 20px;
+        color: var(--main-color);
+        border-radius: 100px;
+        font-size: 14px;
+    }
+}
+.org-btn{
+    background-color: var(--main-color);
+    color: var(--white-color);
+}
+.white-btn{
+    border-color: #ddd;
+    background-color: var(--white-color);
+}
+.org-btn:hover{
+    background-color: var(--white-color); 
+    color: var(--black-color);
+    border: 1px solid var(--black-color) !important;
+}
+.c-btn {
+    padding: 16px 32px !important;
+    border: none!important;
+    box-shadow: rgb(149 157 165 / 10%) 0px 8px 24px!important;
+    font-size: 16px!important;
+    font-weight: 400!important;
+    border-radius: 0 !important;
+    margin-right: 12px;
+    letter-spacing: 0.5px;  
+    min-height: 60px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    position: relative;
+    z-index: 1;
+}
+.c-btn:after {
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    content: '';
+    transition: 0.3s all;
+    width: 0;
+    color: #000;
+    z-index: -1;
+}
+.c-btn:hover::after{
+    width: 100%;
+}
+.c-btn:hover {
+    background-color: #000;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.custom-swiper-slide{
+    .swiper-slide{
+        background: #f2f6f7;
+        .swiper-slider {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            padding: 100px 0;
+            overflow: hidden;
+            .content {
+                width: 50%;
+                overflow: hidden;
+                h4{
+                    span{
+                        svg {
+                            font-size: 18px;
+                            position: relative;
+                            top: 2px;
+                            color:var(--main-color)
+                        }
+                    }
+                }
+            
+                p{
+                    color: var(--para-color);
+                    padding-left: 30px;
+                    border-left: 1px solid #576466;
+                    line-height: 28px;
+                }
+                button {
+                    margin-top: 1em!important;
+                  
+                }
+                .cus-btn {
+                    position: relative;
+                }
+              
+            }
+            .slider-img {
+                width: 50%;
+                overflow: hidden;
+                img{
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+    .right-txt{
+        text-align: right;
+    }
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 15px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        color: var(--black-color);
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        border: 1px solid #ddd;
+        text-align: center;
+        display: none;
+        font-weight: 900;
+      
+    }
+    .swiper-button-next:hover, .swiper-button-prev:hover{
+        background-color: var(--main-color);
+        color: var(--white-color);   
+         -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+    }
+    .swiper-button-next{
+        right: 40px;
+    }
+    .swiper-button-prev {
+        left: 40px;
+    }
+}
+.custom-swiper-slide:hover .swiper-button-prev, .custom-swiper-slide:hover .swiper-button-next {
+    display: block !important;
+}
+
+// Count 
+.count-section {
+    background: #f2f6f7;
+    .count-outer {
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+        padding-top: 120px;
+        padding-bottom: 100px;
+        .count-inner{
+            svg{
+                font-size: 65px;
+                color: var(--main-color);
+            }
+            h2{
+                
+            }
+            p{
+                color: var(--para-color);
+            }
+        }
+    }
+}

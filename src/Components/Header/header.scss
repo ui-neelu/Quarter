@@ -1,0 +1,119 @@
+// Common scss
+
+@media (min-width: 1200px){
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
+}
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        display: inline;
+        list-style-type: none;
+    }
+}
+a{
+    text-decoration: none;
+}
+// announcement
+.announcement{
+    background: var(--bg-color);
+    color: var(--white-color);
+    min-height: 40px;
+    .announcement_inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 40px;
+        overflow: hidden;
+        .mail_phone {
+            li:first-child {
+                margin-right: 30px;
+            }
+        }
+        .social{
+            li {
+                font-size: 14px;
+                margin: 0 10px 0 0;
+            }
+        }
+        ul{
+            li{
+                font-size: 14px;
+               span{
+                color: var(--main-color);
+               }
+              
+            }
+            .add-listiing{
+                position: relative;
+                background: var(--main-color);
+                padding: 13px 13px;
+                margin-left: 20px;
+                a{
+                    color: var(--white-color);
+                    z-index: 999;
+                    position: relative;
+                }
+            }
+          
+        }
+    }
+   
+}
+
+// Header
+.header{
+    padding: 30px 0;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .header-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .header-logo{
+
+        }
+        .header-menu{
+           ul{
+               li{
+                display: inline-block;
+                position: relative;
+                margin-right: 36px;
+                :hover{
+                    color: var(--main-color);
+                }
+                a{
+                    color: var(--black-color);
+                }
+                span {
+                    font-size: 10px;
+                    margin-left: 3px;
+                }
+               }
+           }
+        }
+        .header-social{
+           ul{
+               li{
+                   padding: 12px;
+                   font-size: 22px;
+                   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                   margin-left: 10px;
+                   cursor: pointer;
+                   a{
+                       color: var(--black-color);
+                       
+                   }
+               }
+               li:hover{
+                   background-color: var(--main-color);
+                   svg{
+                       color: #fff;
+                   }
+               }
+           }
+        }
+    }
+}

@@ -1,0 +1,62 @@
+.secvice-section{
+    background-color: #f2f6f7;
+    padding-top: 120px;
+    padding-bottom: 90px;
+    text-align: center;
+    .service-card {
+        display: flex;
+        margin-top: 50px;
+        .card {
+            background: #fff;
+            border: 1px solid var(--border-color-8);
+            padding: 40px 30px 35px;
+            margin: 15px;
+            box-shadow: 0 16px 32px 0 rgba(7, 28, 31, 0.1);
+            position: relative;
+            h3{
+                
+                a{
+                    color: var( --black-color);
+                    font-size: 24px;
+                }
+            }
+            p {
+                color: var(--para-color);
+                line-height: 26px;
+                font-size: 14px;
+                margin-bottom: 24px;
+                svg {
+                    position: relative;
+                    top: 3px;
+                    left: 3px;
+                }
+            }
+            a{
+                color: #8cb2b2;
+                font-size: 14px;
+            }
+       
+         }
+         .card:before {
+            position: absolute;
+            content: "";
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 4px;
+            background-color: var(--main-color);
+            transition: all 0.5s ease 0s;
+             -webkit-transition: all 0.5s ease 0s;
+            opacity: 0;
+            visibility: hidden;
+        }
+        .card:hover::before {
+            width: 100%;
+            opacity: 1;
+            visibility: visible;
+            
+        }
+     }
+ 
+}
+

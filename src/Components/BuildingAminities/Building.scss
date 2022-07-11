@@ -1,0 +1,80 @@
+.building-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    .w-25 {
+        flex: 0 0 25%;
+        width: 25%;
+        margin-bottom: 50px;
+        
+        .building-section-inner {
+            margin-right: 15px;
+            margin-left: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px 0 rgba(23, 44, 82, 0.1);
+            border-radius: 10px;
+            -webkit-transition: all 0.3s ease 0s;
+            -o-transition: all 0.3s ease 0s;
+            transition: all 0.3s ease 0s;
+            a {
+                padding: 40px 30px 35px;
+                display: block;
+                position: relative;
+                color: var(--black-color);
+                .building-section-inner-data{
+                    h3{
+                        font-size: 22px;
+                        font-weight: 600;
+                    }
+                    span:first-child{
+                        width: 100px;
+                        height: 100px;
+                        line-height: 115px;
+                        font-size: 45px;
+                        border-radius: 100%;
+                        background-color: #fff2f0;
+                        color: var(--main-color);
+                        text-align: center;
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        margin-bottom: 20px;
+
+                    }
+                    span:last-child{
+                        width: 45px;
+                        height: 45px;
+                        line-height: 50px;
+                        background-color: var(--white-color);
+                        display: block;
+                        border-radius: 100%;
+                        text-align: center;
+                        font-size: 18px;
+                        -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+                        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+                        position: absolute;
+                        bottom: -20px;
+                        right: 50%;
+                        -webkit-transform: translateX(50%);
+                        -ms-transform: translateX(50%);
+                        transform: translateX(50%);
+                        border: 1px solid #ddd6;
+                        svg{
+                            color: var(--para-color);
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .building-section-inner:hover{
+            background-color: var(--main-color);
+            h3{
+                color: var(--white-color);
+            }
+            svg{
+                color: var(--main-color) !important;
+            }
+        }
+    }
+} 

@@ -1,6 +1,11 @@
 :focus-visible {
     outline: none;
 }
+a {
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
 h1 {
     font-size: 65px;
     line-height: 1;
@@ -186,6 +191,30 @@ h2{
             p{
                 color: var(--para-color);
             }
+        }
+    }
+}
+
+// proflie data
+.footer-profile-data{
+    display: flex;
+    align-items: center;
+    .profile-img{
+      width: 42px;
+      margin-right: 12px;
+      img{
+          width: 100%;
+          border-radius: 100px;
+      }
+    }
+    .profile-data{
+        h4{
+            margin: 0;
+        }
+        p{
+            margin-top: 8px;
+            color: var(--para-color);
+            font-size: 12px;
         }
     }
 }

@@ -12,6 +12,11 @@ import {Feature} from "./Components/Feature/Feature";
 import { Parallax } from "./Components/Parallax/Parallax";
 import Tabs from "./Components/TabComponent/Tabs";
 import { Building } from "./Components/BuildingAminities/Building";
+import Footer from "./Components/Footer/Footer";
+import Loop from "./Pages/Loop";
+import { Testimonial } from "./Components/Testimonial/Testimonial";
+import { Blog } from "./Components/Blog/Blog";
+import Newsletter from "./Components/Newslatter/Newslatter";
 function AppRoutes() {
   return (
     <Routes>
@@ -27,6 +32,11 @@ function AppRoutes() {
         <Route path="/" element={<Parallax/>}/>
         <Route path="/" element={<Tabs/>}/>
         <Route path="/" element={<Building/>}/>
+        <Route path="/" element={<Loop/>}/>
+        <Route path="/" element={<Footer/>}/>
+        <Route path="/" element={<Testimonial/>}/>
+        <Route path="/" element={<Blog/>}/>
+        <Route path="/" element={<Newsletter/>}/>
     </Routes>
   );
 }

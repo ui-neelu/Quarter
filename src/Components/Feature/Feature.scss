@@ -140,28 +140,7 @@
                 padding: 20px 30px 30px;
                 border-top: 1px solid #e5eaee;
                 justify-content: space-between;
-                .inner-profile-left{
-                    display: flex;
-                    align-items: center;
-                    .profile-img{
-                      width: 42px;
-                      margin-right: 12px;
-                      img{
-                          width: 100%;
-                          border-radius: 100px;
-                      }
-                    }
-                    .profile-data{
-                        h4{
-                            margin: 0;
-                        }
-                        p{
-                            margin-top: 8px;
-                            color: var(--para-color);
-                            font-size: 12px;
-                        }
-                    }
-                }
+               
                 .inner-profile-right{
                     ul{
                         li{

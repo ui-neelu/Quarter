@@ -44,7 +44,20 @@ export const Blog = () => {
             
           <div className='building-section'>
           <Swiper slidesPerView={3} spaceBetween={30} slidesPerGroup={3} loop={true} loopFillGroupWithBlank={true}
-                navigation={true} modules={[Navigation]} className="mySwiper testimonial-section">
+                navigation={true} modules={[Navigation]} className="mySwiper testimonial-section"  breakpoints={{
+                  640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1024: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                  },
+                  1100: {
+                    slidesPerView:3,
+                    spaceBetween: 20,
+                  },
+                }}>
                {slidedata}
           </Swiper>
           </div>

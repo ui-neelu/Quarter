@@ -30,10 +30,28 @@ export const Feature = () => {
         spaceBetween={30}
         pagination={true}
         navigation={true}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          1100: {
+            slidesPerView:3,
+            spaceBetween: 20,
+          },
+          1501: {
+            slidesPerView:4,
+            spaceBetween: 20,
+          },
+        }}
         className="mySwiper custom-feature-slider">
-     
+      {featuredata1.map((featuredata1) => (
+       
         <SwiperSlide>
-        {featuredata1.map((featuredata1) => (
           <div className='custom-slider'>
             <div className='slide-location'>
               <div className='sale-budge'>
@@ -85,295 +103,11 @@ export const Feature = () => {
               </div>
         
           </div>
-         )
-         )
-        }
+   
         </SwiperSlide>
-        <SwiperSlide>
-        {featuredata1.map((featuredata1) => (
-          <div className='custom-slider'>
-            <div className='slide-location'>
-              <div className='sale-budge'>
-                <span>{featuredata1.salebadge}</span>
-              </div>
-            <div className='slide-img'>
-               <img src={featuredata1.image} alt="Feature Img" />
-            </div>
-            <div className='location-with-icons'>
-              <div className=''> <Link to="#"><IoIosPin/> {featuredata1.location} </Link> </div>       
-              <div className='camera-flim'><Link to="#"><AiFillCamera/>  {featuredata1.camera} </Link><Link to="#"><FaFilm/>{featuredata1.video} </Link> </div>     
-            </div>
-            </div>
-            <div className='slide-data-info'>
-               <div className='product-price'>
-                 <span>{featuredata1.price}</span>
-               </div>
-               <h3>{featuredata1.heading}</h3>
-               <p>{featuredata1.para} </p>
-
-               <div className='icon-listing'>
-                  <ul>
-                      <li><p>3<span><BiBed/></span></p> <p>Bedrooms</p> </li>
-                      <li><p>2<span><BiBath/></span></p> <p>Bathrooms</p> </li>
-                      <li><p>3450<span><BiShapeSquare/></span> </p> <p>square Ft</p> </li>
-                  </ul>
-              </div>
-              </div>
-
-              <div className='slide-bottom-profile'>
-                 <div className='inner-profile'>
-                    <div className='inner-profile-left footer-profile-data'>
-                       <div className='profile-img'>
-                          <img src={featuredata1.profileimg} alt='profile'/>
-                      </div>
-                      <div className='profile-data'>
-                        <h4>{featuredata1.authorname}</h4>
-                        <p>{featuredata1.authorbrief}</p>
-                      </div>
-                    </div>
-                    <div className='inner-profile-right'>
-                      <ul>
-                        <li> <Link to="#">< AiOutlineExpandAlt/></Link> </li>
-                        <li>  <Link to="#"><AiOutlineHeart /></Link> </li>
-                        <li>  <Link to="#"><AiOutlinePlus /></Link> </li>
-                      </ul>
-                    </div>
-                 </div>
-              </div>
-        
-          </div>
-         )
-         )
-        }
-        </SwiperSlide>
-        <SwiperSlide>
-        {featuredata1.map((featuredata1) => (
-          <div className='custom-slider'>
-            <div className='slide-location'>
-              <div className='sale-budge'>
-                <span>{featuredata1.salebadge}</span>
-              </div>
-            <div className='slide-img'>
-               <img src={featuredata1.image} alt="Feature Img" />
-            </div>
-            <div className='location-with-icons'>
-              <div className=''> <Link to="#"><IoIosPin/> {featuredata1.location} </Link> </div>       
-              <div className='camera-flim'><Link to="#"><AiFillCamera/>  {featuredata1.camera} </Link><Link to="#"><FaFilm/>{featuredata1.video} </Link> </div>     
-            </div>
-            </div>
-            <div className='slide-data-info'>
-               <div className='product-price'>
-                 <span>{featuredata1.price}</span>
-               </div>
-               <h3>{featuredata1.heading}</h3>
-               <p>{featuredata1.para} </p>
-
-               <div className='icon-listing'>
-                  <ul>
-                      <li><p>3<span><BiBed/></span></p> <p>Bedrooms</p> </li>
-                      <li><p>2<span><BiBath/></span></p> <p>Bathrooms</p> </li>
-                      <li><p>3450<span><BiShapeSquare/></span> </p> <p>square Ft</p> </li>
-                  </ul>
-              </div>
-              </div>
-
-              <div className='slide-bottom-profile'>
-                 <div className='inner-profile'>
-                    <div className='inner-profile-left footer-profile-data'>
-                       <div className='profile-img'>
-                          <img src={featuredata1.profileimg} alt='profile'/>
-                      </div>
-                      <div className='profile-data'>
-                        <h4>{featuredata1.authorname}</h4>
-                        <p>{featuredata1.authorbrief}</p>
-                      </div>
-                    </div>
-                    <div className='inner-profile-right'>
-                      <ul>
-                        <li> <Link to="#">< AiOutlineExpandAlt/></Link> </li>
-                        <li>  <Link to="#"><AiOutlineHeart /></Link> </li>
-                        <li>  <Link to="#"><AiOutlinePlus /></Link> </li>
-                      </ul>
-                    </div>
-                 </div>
-              </div>
-        
-          </div>
-         )
-         )
-        }
-        </SwiperSlide>
-        <SwiperSlide>
-        {featuredata1.map((featuredata1) => (
-          <div className='custom-slider'>
-            <div className='slide-location'>
-              <div className='sale-budge'>
-                <span>{featuredata1.salebadge}</span>
-              </div>
-            <div className='slide-img'>
-               <img src={featuredata1.image} alt="Feature Img" />
-            </div>
-            <div className='location-with-icons'>
-              <div className=''> <Link to="#"><IoIosPin/> {featuredata1.location} </Link> </div>       
-              <div className='camera-flim'><Link to="#"><AiFillCamera/>  {featuredata1.camera} </Link><Link to="#"><FaFilm/>{featuredata1.video} </Link> </div>     
-            </div>
-            </div>
-            <div className='slide-data-info'>
-               <div className='product-price'>
-                 <span>{featuredata1.price}</span>
-               </div>
-               <h3>{featuredata1.heading}</h3>
-               <p>{featuredata1.para} </p>
-
-               <div className='icon-listing'>
-                  <ul>
-                      <li><p>3<span><BiBed/></span></p> <p>Bedrooms</p> </li>
-                      <li><p>2<span><BiBath/></span></p> <p>Bathrooms</p> </li>
-                      <li><p>3450<span><BiShapeSquare/></span> </p> <p>square Ft</p> </li>
-                  </ul>
-              </div>
-              </div>
-
-              <div className='slide-bottom-profile'>
-                 <div className='inner-profile'>
-                    <div className='inner-profile-left footer-profile-data'>
-                       <div className='profile-img'>
-                          <img src={featuredata1.profileimg} alt='profile'/>
-                      </div>
-                      <div className='profile-data'>
-                        <h4>{featuredata1.authorname}</h4>
-                        <p>{featuredata1.authorbrief}</p>
-                      </div>
-                    </div>
-                    <div className='inner-profile-right'>
-                      <ul>
-                        <li> <Link to="#">< AiOutlineExpandAlt/></Link> </li>
-                        <li>  <Link to="#"><AiOutlineHeart /></Link> </li>
-                        <li>  <Link to="#"><AiOutlinePlus /></Link> </li>
-                      </ul>
-                    </div>
-                 </div>
-              </div>
-        
-          </div>
-         )
-         )
-        }
-        </SwiperSlide>
-        <SwiperSlide>
-        {featuredata1.map((featuredata1) => (
-          <div className='custom-slider'>
-            <div className='slide-location'>
-              <div className='sale-budge'>
-                <span>{featuredata1.salebadge}</span>
-              </div>
-            <div className='slide-img'>
-               <img src={featuredata1.image} alt="Feature Img" />
-            </div>
-            <div className='location-with-icons'>
-              <div className=''> <Link to="#"><IoIosPin/> {featuredata1.location} </Link> </div>       
-              <div className='camera-flim'><Link to="#"><AiFillCamera/>  {featuredata1.camera} </Link><Link to="#"><FaFilm/>{featuredata1.video} </Link> </div>     
-            </div>
-            </div>
-            <div className='slide-data-info'>
-               <div className='product-price'>
-                 <span>{featuredata1.price}</span>
-               </div>
-               <h3>{featuredata1.heading}</h3>
-               <p>{featuredata1.para} </p>
-
-               <div className='icon-listing'>
-                  <ul>
-                      <li><p>3<span><BiBed/></span></p> <p>Bedrooms</p> </li>
-                      <li><p>2<span><BiBath/></span></p> <p>Bathrooms</p> </li>
-                      <li><p>3450<span><BiShapeSquare/></span> </p> <p>square Ft</p> </li>
-                  </ul>
-              </div>
-              </div>
-
-              <div className='slide-bottom-profile'>
-                 <div className='inner-profile'>
-                    <div className='inner-profile-left footer-profile-data'>
-                       <div className='profile-img'>
-                          <img src={featuredata1.profileimg} alt='profile'/>
-                      </div>
-                      <div className='profile-data'>
-                        <h4>{featuredata1.authorname}</h4>
-                        <p>{featuredata1.authorbrief}</p>
-                      </div>
-                    </div>
-                    <div className='inner-profile-right'>
-                      <ul>
-                        <li> <Link to="#">< AiOutlineExpandAlt/></Link> </li>
-                        <li>  <Link to="#"><AiOutlineHeart /></Link> </li>
-                        <li>  <Link to="#"><AiOutlinePlus /></Link> </li>
-                      </ul>
-                    </div>
-                 </div>
-              </div>
-        
-          </div>
-         )
-         )
-        }
-        </SwiperSlide>
-        <SwiperSlide>
-        {featuredata1.map((featuredata1) => (
-          <div className='custom-slider'>
-            <div className='slide-location'>
-              <div className='sale-budge'>
-                <span>{featuredata1.salebadge}</span>
-              </div>
-            <div className='slide-img'>
-               <img src={featuredata1.image} alt="Feature Img" />
-            </div>
-            <div className='location-with-icons'>
-              <div className=''> <Link to="#"><IoIosPin/> {featuredata1.location} </Link> </div>       
-              <div className='camera-flim'><Link to="#"><AiFillCamera/>  {featuredata1.camera} </Link><Link to="#"><FaFilm/>{featuredata1.video} </Link> </div>     
-            </div>
-            </div>
-            <div className='slide-data-info'>
-               <div className='product-price'>
-                 <span>{featuredata1.price}</span>
-               </div>
-               <h3>{featuredata1.heading}</h3>
-               <p>{featuredata1.para} </p>
-
-               <div className='icon-listing'>
-                  <ul>
-                      <li><p>3<span><BiBed/></span></p> <p>Bedrooms</p> </li>
-                      <li><p>2<span><BiBath/></span></p> <p>Bathrooms</p> </li>
-                      <li><p>3450<span><BiShapeSquare/></span> </p> <p>square Ft</p> </li>
-                  </ul>
-              </div>
-              </div>
-
-              <div className='slide-bottom-profile'>
-                 <div className='inner-profile'>
-                    <div className='inner-profile-left footer-profile-data'>
-                       <div className='profile-img'>
-                          <img src={featuredata1.profileimg} alt='profile'/>
-                      </div>
-                      <div className='profile-data'>
-                        <h4>{featuredata1.authorname}</h4>
-                        <p>{featuredata1.authorbrief}</p>
-                      </div>
-                    </div>
-                    <div className='inner-profile-right'>
-                      <ul>
-                        <li> <Link to="#">< AiOutlineExpandAlt/></Link> </li>
-                        <li>  <Link to="#"><AiOutlineHeart /></Link> </li>
-                        <li>  <Link to="#"><AiOutlinePlus /></Link> </li>
-                      </ul>
-                    </div>
-                 </div>
-              </div>
-        
-          </div>
-         )
-         )
-        }
-        </SwiperSlide>
+            )
+            )
+           }
         
       </Swiper>
       </div>

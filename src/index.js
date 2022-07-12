@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import './variable.css';
 import './custom.scss';
-
+import './mobile.scss';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
